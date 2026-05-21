@@ -1,0 +1,650 @@
+
+======================================================================
+PÁGINA 1  (637 x 884)
+======================================================================
+
+--- bloque @(247,60) ---
+**QUICK START INSTRUCTIONS**
+
+--- bloque @(338,98) ---
+**Routine maintenance**
+Heater-Cooler System 3T
+
+--- bloque @(339,747) ---
+NOTE: These Quick Start Instructions are only an excerpt
+of the Operating Instructions (CP_IFU_16-XX-XX_USA_014)
+regarding routine water maintenance and disinfection
+(chapter 5 and 6). They do not replace the Operating
+Instructions. For complete set up, use of the machine and
+warnings and cautions, the comprehensive Heater Cooler
+System Operating Instructions must be followed.
+
+--- bloque @(215,260) ---
+**Timelines for disinfection and related tasks**
+
+--- bloque @(104,316) ---
+**A)	 prior to inital operation;**
+Surface disinfection and
+page 2
+**prior to storing**
+disinfection of water circuits
+
+--- bloque @(104,384) ---
+**B)	 after every operation**
+Surface disinfection
+page 2
+
+--- bloque @(104,434) ---
+**C)	 every 7 days**
+Water change;
+page 3
+Add hydrogen-peroxide;
+page 3
+Disinfection of overflow bottle
+page 4
+
+--- bloque @(104,520) ---
+**D)	 every 14 days**
+Disinfection of water circuits
+page 5
+
+--- bloque @(104,570) ---
+**E)	 once per year**
+Exchange the tubings
+page 10
+
+--- bloque @(104,620) ---
+**F)	**** ****regularly	**
+Take water samples**	**
+page 10
+
+======================================================================
+PÁGINA 2  (637 x 884)
+======================================================================
+
+--- bloque @(379,50) ---
+**QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(557,833) ---
+**I 2 I**
+
+--- bloque @(72,84) ---
+**A.1)	 Surface DIsinfection**
+
+--- bloque @(76,121) ---
+Close the CAN-jack with the matching cover.
+1.1
+Use only pre-soaked, ready-to-use disinfectant
+tissues.
+1.2
+
+--- bloque @(75,172) ---
+Clean all accessible system surfaces.
+1.3
+Disinfect all accessible system surfaces.
+Ensure that no liquids enter the housing.
+1.4
+
+--- bloque @(593,129) ---
+**A) prior to inital operation; prior to storing   I   B) after every operation**
+
+--- bloque @(72,251) ---
+**A.2)	DIsinfection of water circuits**
+
+--- bloque @(76,289) ---
+**see D) page 5 disinfection of water circuits every 14 days**
+1.1
+
+--- bloque @(72,392) ---
+**B.1)	 Surface DIsinfection**
+
+--- bloque @(76,428) ---
+Close the CAN-jack with the matching cover.
+1.1
+Use only pre-soaked, ready-to-use disinfectant
+tissues.
+1.2
+
+--- bloque @(75,481) ---
+Clean all accessible system surfaces.
+1.3
+Disinfect all accessible system surfaces.
+Ensure that no liquids enter the housing.
+1.4
+
+--- bloque @(297,649) ---
+**Required material **(ready-to-use disinfectant tissues)
+
+--- bloque @(297,676) ---
+**Product name 	**
+**Manufacturer**
+
+--- bloque @(297,695) ---
+Bacillol
+Bode
+
+--- bloque @(297,714) ---
+CaviWipe
+Metrex
+
+--- bloque @(297,733) ---
+Super Sani Cloth
+PDI
+
+--- bloque @(297,752) ---
+Meliseptol HBV
+B. Braun
+
+--- bloque @(297,771) ---
+Mikrozid AF
+Schülke & Mayr
+
+--- bloque @(72,44) ---
+**A) prior to inital operation; prior to storing**
+
+--- bloque @(69,354) ---
+**B) after every operation**
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+======================================================================
+PÁGINA 3  (637 x 884)
+======================================================================
+
+--- bloque @(379,50) ---
+**QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(557,833) ---
+**I 3 I**
+
+--- bloque @(72,83) ---
+**C.1) Drainage**
+
+--- bloque @(76,120) ---
+Drain the water tanks.
+1.1
+Be sure that the drain valves are closed
+once the tanks are empty.
+1.2
+
+--- bloque @(72,284) ---
+**C.2) Fill and add hydrogene-peroxide**
+
+--- bloque @(104,321) ---
+Open the filling.
+Fill the device with filtered tap water until
+the first orange bar is blinking.
+
+--- bloque @(76,321) ---
+2.1
+Add 150ml hydrogen-peroxide (H2O2).
+2.2
+
+--- bloque @(103,478) ---
+Fill the device with filtered tap water until
+2 bars are green.
+Close tank filling.
+
+--- bloque @(75,478) ---
+2.3
+
+--- bloque @(337,478) ---
+Disconnect short circuit tubing patient 1.
+2.4
+
+--- bloque @(103,633) ---
+Create a short circuit between inlet of cardioplegia
+and inlet of the patient 1 while disinfecting
+the tubing and device connector.
+
+--- bloque @(75,633) ---
+2.5
+
+--- bloque @(336,633) ---
+Start cold cardioplegia.
+Circulate for 5min.
+2.6
+
+--- bloque @(75,790) ---
+Stop cold cardioplegia.
+2.7
+Switch off the device.
+2.8
+
+--- bloque @(593,394) ---
+**C)	 every 7 days**
+
+--- bloque @(72,44) ---
+**C) every 7 days**
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+======================================================================
+PÁGINA 4  (637 x 884)
+======================================================================
+
+--- bloque @(377,48) ---
+**QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(552,833) ---
+**I  4  I**
+
+--- bloque @(72,47) ---
+**C.3) Disinfection of overflow bottle**
+
+--- bloque @(75,85) ---
+Empty the overflow bottle.
+3.1
+
+--- bloque @(364,85) ---
+Disinfect the overflow bottle with automatic
+chemical-thermal disinfection in a
+washer-disinfector.
+
+--- bloque @(335,85) ---
+3.2
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+--- bloque @(593,394) ---
+**C)	 every 7 days**
+
+======================================================================
+PÁGINA 5  (637 x 884)
+======================================================================
+
+--- bloque @(377,48) ---
+**QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(553,833) ---
+**I  5  I**
+
+--- bloque @(72,84) ---
+**D.1) Preparation**
+
+--- bloque @(76,122) ---
+Be sure to wear protective glasses and clothing.
+Disinfect your hands.
+1.1
+
+--- bloque @(363,122) ---
+Use the Aquasafe water filter from Pall to fill
+the device with filtered tap water.
+Be sure that the filter is not expired yet.
+
+--- bloque @(335,122) ---
+1.2
+
+--- bloque @(75,278) ---
+Switch on the device.
+Mute the low level alarm.
+1.3
+Open the filling. Disinfect the filling and the tubing
+of the water filter. Fill the device with filtered tap
+water until the first orange bar is blinking.
+
+--- bloque @(335,278) ---
+1.4
+
+--- bloque @(75,460) ---
+**D.2) add disinfectant**
+
+--- bloque @(106,507) ---
+Measure 450ml Puristeril 340 **or** 450ml Peresal
+**or** 450ml Minncare **or** 180ml Clorox.
+Fill the disinfectant into the device.
+
+--- bloque @(75,506) ---
+2.1
+Add filtered tap water until 2 bars are green.
+Close the tank filling.
+Make sure all circuits are closed.
+
+--- bloque @(338,506) ---
+2.2
+
+--- bloque @(593,329) ---
+**D)	 every 14 days**
+
+--- bloque @(72,44) ---
+**D) every 14 days**
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+--- bloque @(77,664) ---
+Disinfect tubing connectors.
+Disinfect device connectors.
+2.3
+Create a short circuit between inlet of cardioplegia
+and inlet of the patient 1.
+Make sure all circuits are closed.
+
+--- bloque @(338,664) ---
+2.4
+
+======================================================================
+PÁGINA 6  (637 x 884)
+======================================================================
+
+--- bloque @(379,48) ---
+**QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(552,833) ---
+**I  6  I**
+
+--- bloque @(103,85) ---
+Set cold cardioplegia to 10°C.
+Set warm cardioplegia and patient
+temperature to 20°C.
+
+--- bloque @(75,85) ---
+2.5
+
+--- bloque @(72,283) ---
+**D.3) disinfect (5 min.)**
+
+--- bloque @(103,327) ---
+Start cold cardioplegia.
+Circulate for 5min.
+Stop cold cardioplegia.
+
+--- bloque @(75,327) ---
+3.1
+Disinfect additional short circuit tubing.
+Disinfect device connectors.
+Establish a short circuit tubing for patient 2.
+
+--- bloque @(335,327) ---
+3.2
+
+--- bloque @(103,485) ---
+Disconnect and disinfect established short circuit.
+Disinfect device connector.
+Establish short circuit tubing for cardioplegia.
+
+--- bloque @(75,485) ---
+3.3
+
+--- bloque @(335,485) ---
+3.4
+
+--- bloque @(364,485) ---
+Disinfect connectors of longer tubing and short
+circuit adaptor. Connect both tubing ending with
+short circuit adaptor.
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+--- bloque @(103,643) ---
+Disinfect device connectors.
+Disinfect tubing connectors.
+Establish short circuit tubing for patient 1.
+
+--- bloque @(75,643) ---
+3.5
+
+--- bloque @(335,643) ---
+Open all valves.
+3.6
+
+--- bloque @(593,329) ---
+**D)	 every 14 days**
+
+======================================================================
+PÁGINA 7  (637 x 884)
+======================================================================
+
+--- bloque @(377,48) ---
+** QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(553,833) ---
+**I  7  I**
+
+--- bloque @(72,47) ---
+**D.4) disinfect (10 min.)**
+
+--- bloque @(75,86) ---
+Start warm cardioplegia and patient 1 and 2.
+Circulate for 10min.
+4.1
+Close all valves while circuits are running
+to empty the tubing.
+4.2
+
+--- bloque @(75,140) ---
+When tubing are empty stop all circuits.
+4.3
+
+--- bloque @(72,226) ---
+**D.5) drainage 1**
+
+--- bloque @(75,264) ---
+Disinfect drainage tubing and drains.
+Connect both drainage tubing.
+5.1
+
+--- bloque @(335,264) ---
+Open both drains.
+Drain the device completely.
+5.2
+
+--- bloque @(78,419) ---
+Close both drains.
+5.3
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+--- bloque @(593,329) ---
+**D)	 every 14 days**
+
+======================================================================
+PÁGINA 8  (637 x 884)
+======================================================================
+
+--- bloque @(377,48) ---
+** QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(552,833) ---
+**I  8  I**
+
+--- bloque @(72,47) ---
+**D.6) Rinse 1**
+
+--- bloque @(103,85) ---
+Open tank filling.
+Fill the device with filtered tap water until 2 bars
+are green. Close tank filling.
+
+--- bloque @(75,85) ---
+6.1
+Open all valves.
+Start warm cardioplegia and patient 1 and 2.
+Circulate for 3min.
+
+--- bloque @(335,85) ---
+6.2
+
+--- bloque @(75,243) ---
+Close all valves while circuits are running
+to empty the tubing.
+6.3
+When tubing are empty stop all circuits.
+6.4
+
+--- bloque @(72,413) ---
+**D.7) Drainage 2**
+
+--- bloque @(75,450) ---
+Open both drains.
+Drain the device completely.
+7.1
+Close both drains.
+7.2
+
+--- bloque @(72,524) ---
+**D.8) Rinse 2**
+
+--- bloque @(103,562) ---
+Open tank filling.
+Fill the device with filtered tap water until 2 bars
+are green. Close tank filling.
+
+--- bloque @(75,561) ---
+8.1
+Open all valves.
+Start warm cardioplegia and patient 1 and 2.
+Circulate for 3min.
+
+--- bloque @(338,561) ---
+8.2
+
+--- bloque @(75,621) ---
+Close all valves while circuits are running
+to empty the tubing.
+8.3
+When tubing are empty stop all circuits.
+8.4
+
+--- bloque @(72,694) ---
+**D.9) Drainage 3**
+
+--- bloque @(75,731) ---
+Open both drains.
+Drain the device completely.
+9.1
+Close both drains.
+9.2
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+--- bloque @(593,329) ---
+**D)	 every 14 days**
+
+======================================================================
+PÁGINA 9  (637 x 884)
+======================================================================
+
+--- bloque @(377,48) ---
+** QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(552,833) ---
+**I  9  I**
+
+--- bloque @(69,47) ---
+**D.10) Fill and add hydrogene-peroxide**
+
+--- bloque @(100,85) ---
+Open the filling.
+Fill the device with filtered tap water until
+the first orange bar is blinking.
+
+--- bloque @(71,85) ---
+10.1
+Add 150ml hydrogen-peroxide (H2O2).
+10.2
+
+--- bloque @(103,244) ---
+Fill the device with filtered tap water until
+2 bars are green.
+Close tank filling.
+
+--- bloque @(73,244) ---
+10.3
+
+--- bloque @(334,244) ---
+Disconnect short circuit tubing patient 1.
+10.4
+
+--- bloque @(103,404) ---
+Create a short circuit between inlet of cardioplegia
+and inlet of the patient 1 while disinfecting
+the tubing and device connector.
+
+--- bloque @(73,403) ---
+10.5
+
+--- bloque @(335,406) ---
+Start cold cardioplegia.
+Circulate for 5min.
+10.6
+
+--- bloque @(73,563) ---
+Stop cold cardioplegia.
+10.7
+Switch off the device.
+10.8
+
+--- bloque @(334,800) ---
+NOTE: The overflow bottle must also
+be disinfected regularly (see C.3) page 4).
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
+
+--- bloque @(593,329) ---
+**D)	 every 14 days**
+
+======================================================================
+PÁGINA 10  (637 x 884)
+======================================================================
+
+--- bloque @(377,48) ---
+** QUICK START INSTRUCTIONS****  I  **Heater-Cooler System 3T** **
+
+--- bloque @(548,833) ---
+**I  10  I**
+
+--- bloque @(72,84) ---
+**E.1) Exchange the tubings**
+
+--- bloque @(77,121) ---
+Tubings that are used with the heater-cooler
+must be replaced once a year.
+1.1
+
+--- bloque @(365,122) ---
+Include the tubings in the disinfection as described.
+Connect the tubings during the disinfection cycle
+to the heater-cooler.
+
+--- bloque @(338,121) ---
+1.2
+
+--- bloque @(334,789) ---
+NOTE: Only use tubings that are certified
+for drinking water systems, such as SORIN
+part number 75-510-218.
+
+--- bloque @(72,481) ---
+**F.1) Take water samples**
+
+--- bloque @(77,518) ---
+Disinfect the drain ports (spray, wipe).
+1.1
+Only if disinfection has not been performed correctly,
+water samples shall be taken and analyzed.
+Open the drain port. Let the water run for a while
+(5sec) and then take the water sample out of the
+running water stream.
+
+--- bloque @(338,518) ---
+1.2
+
+--- bloque @(592,185) ---
+**E) once per year   I   F) regularly**
+
+--- bloque @(72,44) ---
+**E) once per year**
+
+--- bloque @(73,441) ---
+**F) regularly**
+
+--- bloque @(268,842) ---
+CP_IFU_16-XX-XX_Q_USA_001
