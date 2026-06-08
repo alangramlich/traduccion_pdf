@@ -74,14 +74,15 @@ antes de traducir.
 Es el corazón del proceso. Sobre `background_only.pdf` se escribe la traducción
 respetando estas reglas de fidelidad:
 
-1. **Traducción controlada, no automática a ciegas.**
-   Existe una tabla `TRANSLATIONS` que mapea el **texto exacto de cada span**
-   (incluidos tabs y espacios) a su versión en español, revisada manualmente.
-   Esto evita errores de un traductor automático en terminología médica y
-   asegura coherencia (p. ej. *cardioplegia*, *peróxido de hidrógeno*,
-   *circuitos de agua*). Los códigos, números de paso, números de parte y
-   referencias (`2.1`, `CP_IFU_16-XX-XX...`, `75-510-218`) se conservan
-   **literales**.
+1. **Traducción hecha por Claude Code (sin llamadas a API).**
+   La traducción del texto la realizó **Claude Code a pedido por prompt**,
+   volcando el resultado en una tabla `TRANSLATIONS` que mapea el **texto
+   exacto de cada span** (incluidos tabs y espacios) a su versión en español.
+   Se **decidió no usar llamadas a una API de traducción** porque la cantidad
+   de texto es pequeña (un puñado de páginas), de modo que resultaba más simple
+   y reproducible incrustar las traducciones directamente en el script. Los
+   códigos, números de paso, números de parte y referencias (`2.1`,
+   `CP_IFU_16-XX-XX...`, `75-510-218`) se conservan **literales**.
 
 2. **Posición idéntica.** Cada traducción se inserta en el `origin` (línea
    base) del span original, no en un flujo nuevo: el texto queda donde estaba.
@@ -130,7 +131,7 @@ solapamientos.
 | **Color y tamaño** | Se copian del span original; el tamaño solo baja si es necesario para que entre |
 | **Rotación** | Se reaplica la rotación de la línea original |
 | **Contenido técnico (números, códigos, partes)** | Se conservan literales; no se traducen |
-| **Terminología médica** | Tabla de traducción revisada manualmente, coherente en todo el documento |
+| **Terminología médica** | Traducción generada por Claude Code (sin API), incrustada en una tabla coherente en todo el documento |
 | **No invadir vecinos / figuras** | Ancho disponible limitado por el siguiente span u obstáculos detectados |
 | **Verificación** | PDFs comparativos de 3 columnas (extracción y traducción) + reporte de spans sin traducir o muy reducidos |
 
