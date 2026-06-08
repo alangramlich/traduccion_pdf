@@ -1,0 +1,4 @@
+pymupdf>=1.24
+nbformat>=5.9
+nbconvert>=7.0
+ipykernel>=6.0

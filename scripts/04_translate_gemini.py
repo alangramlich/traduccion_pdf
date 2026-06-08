@@ -39,11 +39,31 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "output"
 TEXT_JSON = OUT / "extracted_text.json"
 CACHE = OUT / "translations.json"
+ENV_FILE = ROOT / ".env"
 
 MODEL = "gemini-2.5-flash"
 TEMPERATURE = 0
 BATCH_SIZE = 60
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
+
+
+def load_dotenv(path=ENV_FILE):
+    """Carga KEY=VALUE de un .env al entorno (sin dependencias externas).
+
+    No pisa variables ya presentes en el entorno. Ignora comentarios y comillas.
+    """
+    if not path.exists():
+        return
+    for raw in path.read_text().splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        key = key.strip()
+        val = val.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = val
+
 
 # Spans que NO se traducen (se dejan literales): vacíos o solo números/códigos/separadores.
 SKIP_RE = re.compile(r"^[\d\.\-_ \t\|/IV]+$")
@@ -131,6 +151,10 @@ def main():
     ap.add_argument("--refresh", action="store_true",
                     help="retraduce TODO vía Gemini, ignorando el caché existente")
     args = ap.parse_args()
+
+    load_dotenv()
+    global MODEL
+    MODEL = os.environ.get("GEMINI_MODEL", MODEL)
 
     text_data = json.loads(TEXT_JSON.read_text())
     cores = collect_unique_cores(text_data)

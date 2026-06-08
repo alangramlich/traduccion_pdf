@@ -1,3 +1,7 @@
 output/verify/
 __pycache__/
 *.pyc
+
+# Credenciales: NUNCA subir la key real.
+# Trackeamos .env.example (plantilla) e ignoramos el .env con la clave de verdad.
+.env
