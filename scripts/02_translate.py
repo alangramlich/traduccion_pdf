@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-Paso 2 - Traduccion con Gemini.
+Paso 2 - Traduccion con Gemini (una sola llamada).
 
-Lee output/extracted_text.json y manda CADA texto extraido a la API de Gemini
-para traducirlo. Guarda las traducciones en output/translated_text.json.
-
-Es reanudable: si vuelve a ejecutarse, omite los segmentos ya traducidos
-presentes en el archivo de salida (cache).
+Lee output/extracted_text.json y manda TODOS los textos extraidos a la API de
+Gemini en UNA UNICA llamada. Gemini devuelve un arreglo JSON con la traduccion
+de cada segmento, alineadas por su "id". Guarda el resultado en
+output/translated_text.json.
 
 Variables de entorno:
   GEMINI_API_KEY   (obligatoria)  clave de la API de Gemini
@@ -36,42 +35,56 @@ ENDPOINT = (
 )
 
 
-def translate_text(text):
-    """Traduce un fragmento con Gemini. Reintenta ante errores transitorios."""
+def translate_all(segments):
+    """Traduce TODOS los segmentos en una sola llamada a Gemini.
+
+    Devuelve un dict {id: traduccion}. Reintenta ante errores transitorios.
+    """
+    items = [{"id": s["id"], "text": s["text"]} for s in segments]
     prompt = (
-        f"Translate the following text from {SOURCE_LANG} to {TARGET_LANG}. "
-        "This is content from a medical device cleaning instructions (IFU) document. "
-        "Preserve line breaks, numbers, units and product codes exactly. "
-        "Return ONLY the translation, with no quotes, comments or extra text.\n\n"
-        f"{text}"
+        f"Translate each item from {SOURCE_LANG} to {TARGET_LANG}. "
+        "The content is from a medical device cleaning instructions (IFU) document. "
+        "Preserve line breaks (\\n), numbers, units and product codes exactly. "
+        "You receive a JSON array of objects with fields 'id' and 'text'. "
+        "Return ONLY a JSON array of objects with fields 'id' and 'translation', "
+        "one per input item, keeping the same 'id' values. Do not add any extra "
+        "text outside the JSON.\n\n"
+        "INPUT:\n"
+        f"{json.dumps(items, ensure_ascii=False)}"
     )
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2},
+        "generationConfig": {
+            "temperature": 0.2,
+            "responseMimeType": "application/json",
+        },
     }
     headers = {"Content-Type": "application/json", "x-goog-api-key": API_KEY}
 
     delay = 2
+    last_err = None
     for attempt in range(5):
         try:
-            r = requests.post(ENDPOINT, headers=headers, json=payload, timeout=60)
+            r = requests.post(ENDPOINT, headers=headers, json=payload, timeout=300)
             if r.status_code == 200:
                 data = r.json()
                 cand = data["candidates"][0]
                 parts = cand["content"]["parts"]
-                return "".join(p.get("text", "") for p in parts).strip()
-            # 429 / 5xx -> reintentar
+                raw = "".join(p.get("text", "") for p in parts).strip()
+                arr = json.loads(raw)
+                return {int(o["id"]): o["translation"] for o in arr}
             if r.status_code in (429, 500, 502, 503, 504):
                 print(f"  HTTP {r.status_code}, reintento en {delay}s...")
                 time.sleep(delay)
                 delay *= 2
                 continue
             raise RuntimeError(f"Gemini HTTP {r.status_code}: {r.text[:300]}")
-        except requests.RequestException as e:
-            print(f"  Error de red: {e}; reintento en {delay}s...")
+        except (requests.RequestException, ValueError, KeyError) as e:
+            last_err = e
+            print(f"  Error ({e}); reintento en {delay}s...")
             time.sleep(delay)
             delay *= 2
-    raise RuntimeError("No se pudo traducir tras varios reintentos")
+    raise RuntimeError(f"No se pudo traducir tras varios reintentos: {last_err}")
 
 
 def main():
@@ -84,31 +97,23 @@ def main():
         data = json.load(f)
     segments = data["segments"]
 
-    # Cache de traducciones previas (reanudable)
-    translations = {}
-    if os.path.exists(OUT_JSON):
-        with open(OUT_JSON, encoding="utf-8") as f:
-            prev = json.load(f)
-        for seg in prev.get("segments", []):
-            if seg.get("translated"):
-                translations[seg["id"]] = seg["translated"]
-        print(f"Cache: {len(translations)} traducciones ya existentes.")
+    print(f"Enviando {len(segments)} segmentos a Gemini en una sola llamada...")
+    translations = translate_all(segments)
 
-    total = len(segments)
-    for i, seg in enumerate(segments, 1):
-        if seg["id"] in translations:
-            continue
-        preview = seg["text"][:50].replace("\n", " ")
-        print(f"[{i}/{total}] traduciendo id={seg['id']}: {preview!r}")
-        translations[seg["id"]] = translate_text(seg["text"])
+    # Avisar si falto alguna traduccion
+    faltantes = [s["id"] for s in segments if s["id"] not in translations]
+    if faltantes:
+        print(f"ADVERTENCIA: {len(faltantes)} segmentos sin traduccion: {faltantes}")
 
-        # Guardado incremental para no perder progreso
-        out_segments = [dict(s, translated=translations.get(s["id"], "")) for s in segments]
-        out = dict(data, target_lang=TARGET_LANG, model=MODEL, segments=out_segments)
-        with open(OUT_JSON, "w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False, indent=2)
+    out_segments = [
+        dict(s, translated=translations.get(s["id"], "")) for s in segments
+    ]
+    out = dict(data, target_lang=TARGET_LANG, model=MODEL, segments=out_segments)
+    with open(OUT_JSON, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
 
-    print(f"Listo. Traducciones guardadas en {OUT_JSON}")
+    traducidos = sum(1 for s in out_segments if s["translated"])
+    print(f"Listo. {traducidos}/{len(segments)} traducidos -> {OUT_JSON}")
 
 
 if __name__ == "__main__":
