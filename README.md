@@ -27,9 +27,9 @@ python3 scripts/03_rebuild_pdf.py
 1. **`01_extract_text.py`** — Recorre el PDF con PyMuPDF y extrae el texto a
    nivel de bloque, guardando posición (`bbox`), página y estilo (tamaño,
    color, fuente) de cada segmento.
-2. **`02_translate.py`** — Envía cada texto extraído a la API de Gemini y guarda
-   las traducciones. Es reanudable: omite lo ya traducido (caché) y guarda el
-   progreso de forma incremental.
+2. **`02_translate.py`** — Envía **todos** los textos extraídos a la API de Gemini
+   en **una sola llamada** (como arreglo JSON) y guarda las traducciones alineadas
+   por `id`.
 3. **`03_rebuild_pdf.py`** — Tapa el texto original y escribe la traducción en
    la misma posición, ajustando el tamaño de fuente para que entre en el espacio.
 
